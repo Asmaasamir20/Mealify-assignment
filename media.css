@@ -1,0 +1,632 @@
+/*---- container --- */
+@media (max-width: 1400px) {
+      .container {
+          max-width: 1140px;
+      }
+}
+  
+@media (max-width: 1200px) {
+      .container {
+          max-width: 960px;
+      }
+}
+  
+@media (max-width: 992px) {
+      .container {
+          max-width: 720px;
+      }
+}
+  
+  @media (max-width: 767px) {
+      .container {
+          max-width: 540px;
+      }
+}
+
+
+
+
+/*---- x small --- */
+@media all and (max-width:575px){
+      /* -- start media nav -- */
+      nav .container{
+            width: 100%;
+      }
+      nav .icons .fa-bars{
+            display: inline;   
+      }
+      nav .container .navlink{
+            flex-direction: column; 
+            position: absolute;
+            left: 110%;
+            top: 100%;
+            width: 50%;
+            height: 100vh;
+            background-color:var(--white-color);
+            align-items: flex-start;
+            padding-top: 40px;
+            transition: 0.8s;
+            box-shadow:0 5px 10px 0px var( --links-nav-medai);   
+      }
+      nav #nav-btn:checked~.navlink{
+             left: 50%;   
+      }
+      nav .container .navlink li{
+             padding:30px 10px;   
+      }
+      nav .container .navlink li .active{
+            color: var(--a-links-color);
+      }
+       nav .container .navlink li .active:after{
+             opacity: 0;
+             left: 0;
+             width: 0;
+             transition:  0.3s;
+      }
+      nav .container .navlink li .active:hover::after{
+             opacity: 1;
+             width:100%;
+      }
+      nav .container .navlink li a::after{
+             left: 0;
+             width: 0;
+             height: 2px;
+             transition:  0.3s;
+      }
+      nav .container .navlink li:not(:first-child) a:hover{
+            color: var(--a-links-color);
+      }
+      nav .container .navlink li:not(:first-child) a:hover::after{
+            width:100%;
+      }
+      /* --- end media nav --- */
+      /* --------------------- */
+
+      /*  - start media home - */
+      #home .container{
+            flex-direction: column-reverse;
+            width: 100%;
+      }
+      #home .container .header-content{
+            width: 100%;
+            text-align: center;  
+      }
+      #home .container .header-content p{
+            margin: auto;
+            width: 100%;
+      }
+      #home .container picture{
+            width: 100%;
+            margin: auto;
+      }
+      #home .container .btns{
+            justify-content: center;
+            margin: auto;
+            flex-direction: column; 
+      } 
+      #home .container .btns .but1{
+            border-top-left-radius: 25px;   
+      }
+      /* --- end media home --- */
+      /* ---------------------- */
+
+      /* -- start media chefs -- */
+      #chefs .container .chefs-cards{  
+            flex-direction: column;
+      }
+       #chefs .container .chefs-cards .card{
+            width: 100%;
+           margin-bottom: 30px;
+      }
+       /* --- end media chefs --- */
+       /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery .container{
+            width: 97%;
+            padding-bottom: 80px;
+      }
+      #gallery .container .photo-gallery{
+            flex-flow: column nowrap;
+            height: 2900px;
+      }
+      #gallery .container .photo-gallery .imge{
+            width: 100%;
+      }
+      #gallery .container .photo-gallery .four {
+            order: 3;
+      }
+      #gallery .container .photo-gallery .two {
+            order: 5;
+      }
+      #gallery .container .photo-gallery .three {
+            order: 2;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+
+      /* - start media contact - */
+      #contact .container{
+            width: 100%;
+      }
+      #contact .container .contact-details .info{
+            width:100%; 
+      }
+      #contact .container form .input-group{
+            flex-direction: column;
+      }
+      #contact .container form .input-group input{
+            width:100%; 
+      }
+      /* -- end media contact -- */
+      /* ----------------------- */
+
+      /* - start media footer -- */
+      #footer .container{
+            width: 95%;
+            flex-direction: column;
+      }
+      #footer .container .about{
+            width: 100%;
+      }
+      #footer .container .subscription{
+            width:100%;  
+      }
+      #footer .container .contact-details{
+            width: 100%; 
+      }
+      #footer .container .subscription .box .group input{
+            width: 100%;
+      }
+      #footer .container .subscription .box .group button{
+            width: 100%;
+            margin-top: 10px;
+      }
+      #footer .container .subscription .links ul li {
+            padding-left: 0px;
+      }
+      #footer .container .contact-details{
+            padding-left: 0px;   
+      }
+      #footer .container .contact-details ul{
+            padding-left: 10px;
+      }
+      #footer .container .contact-details ul li{
+            padding-left: 0px;   
+      }
+      /* -- end media footer --- */
+      /* ----------------------- */
+
+}
+
+
+
+/*---- small --- */
+@media all and (min-width:576px) and (max-width:767px){
+
+      /* -- start media nav -- */
+      nav .container{
+            width: 75%;
+      }
+      nav .icons .fa-bars{
+            display: inline;    
+      }
+      nav .container .navlink{
+            flex-direction: column; 
+            position: absolute;
+            left: 110%;
+            top: 100%;
+            width: 50%;
+            height: 100vh;
+            background-color:var(--white-color);
+            align-items: flex-start;
+            padding-top: 40px;
+            transition: 0.6s;
+            box-shadow:0 5px 10px 0px var( --links-nav-medai);   
+      }
+      nav #nav-btn:checked~.navlink{ 
+             left: 60%; 
+      }
+      nav .container .navlink li{
+             padding:30px 10px;  
+      }
+      nav .container .navlink li .active{
+            color: var(--a-links-color);
+      }
+      nav .container .navlink li .active:after{
+             opacity: 0;
+             left: 0;
+             width: 0;
+             transition:  0.3s;
+      }
+      nav .container .navlink li .active:hover::after{
+             opacity: 1;
+             width:100%;
+      }
+      nav .container .navlink li a::after{
+             left: 0;
+             width: 0;
+             height: 2px;
+             transition:  0.3s;    
+      }
+      nav .container .navlink li:not(:first-child) a:hover{
+            color: var(--a-links-color);
+      }
+      nav .container .navlink li:not(:first-child) a:hover::after{
+            width:100%;
+      }
+      /* --- end media nav --- */
+      /* --------------------- */
+
+      /*  - start media home - */
+      #home .container{
+            flex-direction: column-reverse;
+            width: 100%;
+      }
+      #home .container .header-content{
+            width: 100%;
+            text-align: center; 
+      }
+      #home .container .header-content p{
+            margin: auto;
+            width: 75%;
+      }
+      #home .container picture{
+            width: 100%;
+            margin: auto;
+      }
+      #home .container .btns{
+            justify-content: center;
+            margin: auto; 
+      } 
+      #home .container .btns .but1{
+            border-top-left-radius: 25px;    
+      }
+      /* --- end media home --- */
+      /* ---------------------- */
+
+      /* -- start media chefs -- */
+      #chefs .container{
+            width: 85%;
+      }
+      #chefs .container .chefs-cards{  
+            flex-direction: column;
+      }
+      #chefs .container .chefs-cards .card{
+            width: 100%;
+           margin-bottom: 30px;
+      }
+      /* --- end media chefs --- */
+      /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery .container{
+            width: 90%;
+      }
+      #gallery .container .photo-gallery{
+            flex-flow: column nowrap;
+            height:4000px;
+      }
+      #gallery .container .photo-gallery .imge{
+            width: 100%;
+            margin: auto;
+      }
+      #gallery .container .photo-gallery .four {
+            order: 3;
+      }
+      #gallery .container .photo-gallery .two {
+            order: 5;
+      }
+      #gallery .container .photo-gallery .three {
+            order: 2;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+      
+      /* - start media contact - */
+      #contact .container{
+            width: 85%;
+      }
+      #contact .container .contact-details .info{
+            width:100%; 
+      }
+      #contact .container form .input-group{
+            flex-direction: column;
+      }
+      #contact .container form .input-group input{
+            width:100%; 
+      }
+      /* -- end media contact -- */
+      /* ----------------------- */
+  
+      /* - start media footer -- */
+      #footer .container{
+            width: 90%;
+            padding-top: 0;
+            flex-direction: column;
+      }
+      #footer .container .about{
+            width: 100%;
+      }
+      #footer .container .subscription{
+            width:100%;  
+      }
+      #footer .container .contact-details{
+            width: 100%; 
+      }
+      #footer .container .subscription .box .group input{
+            width: 75%;
+      }
+      #footer .container .subscription .box .group button{
+            width: 22%;
+            margin-top: 10px;
+            padding: 12px 10px;
+      }
+      #footer .container .contact-details{
+            padding-left: 0px;   
+      }
+      #footer .container .contact-details ul li{
+            padding-left: 15px;  
+      }
+      /* -- end media footer --- */
+      /* ----------------------- */  
+
+}
+
+
+/*---- mediam --- */
+@media all and (min-width:768px) and (max-width:992px){
+
+      /* -- start media nav -- */
+       nav .container{
+            width: 85%;
+      }
+      nav .icons .fa-bars{
+            display: inline;    
+      }
+      nav .container .navlink{
+            flex-direction: column; 
+            position: absolute;
+            left: 110%;
+            top: 100%;
+            width: 30%;
+            height: 100vh;
+            background-color:var(--white-color);
+            align-items: flex-start;
+            padding-top: 40px;
+            transition: 0.8s;
+            box-shadow:0 5px 10px 0px var( --links-nav-medai);   
+      }
+       nav #nav-btn:checked~.navlink{
+             left: 70%;
+      }
+       nav .container .navlink li{
+             padding:30px 10px;
+      }
+      nav .container .navlink li .active{
+            color: var(--a-links-color);
+      }
+       nav .container .navlink li .active:after{
+             opacity: 0;
+             left: 0;
+             width: 0;
+             transition: 0.3s; 
+      }
+       nav .container .navlink li .active:hover::after{
+             opacity: 1;
+             width:100%;   
+      }
+       nav .container .navlink li a::after{
+             left: 0;
+             width: 0;
+             height: 2px;  
+             transition: 0.3s; 
+      }
+      nav .container .navlink li:not(:first-child) a:hover{
+            color: var(--a-links-color);
+      }
+       nav .container .nav-links li:not(:first-child) a:hover::after{
+            width:100%;
+      }
+      /* --- end media nav --- */
+      /* --------------------- */
+
+      /*  - start media home - */
+      #home .container{
+            flex-direction: column-reverse;
+      }
+      #home .container .header-content{
+            width: 100%;
+            text-align: center;    
+      }
+      #home .container .header-content p{
+            margin: auto;
+            width: 100%;
+      }
+      #home .container picture{
+            width: 90%;
+            margin: auto;
+      }
+      #home .container .btns{
+            justify-content: center;
+            margin: auto; 
+      } 
+      #home .container .btns .but1{
+            border-top-left-radius: 25px; 
+      }
+      /* --- end media home --- */
+      /* ---------------------- */
+
+      /* -- start media chefs -- */
+       #chefs .container{
+            width: 75%;
+      }
+      #chefs .container .chefs-cards{  
+           flex-wrap: wrap;
+      }
+      #chefs .container .chefs-cards .card{
+           width: calc(50% - 15px);
+           margin-bottom: 30px;
+      }
+      /* --- end media chefs --- */
+      /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery{
+            padding-bottom: 0px;    
+      }
+      #gallery .container{
+            width: 85%;
+            margin-bottom: 0;
+      }
+      #gallery .container .photo-gallery{
+            flex-flow: column wrap;
+            height: 1500px;
+            margin: auto;
+      }
+      #gallery .container .photo-gallery .imge{
+            width: 50%;
+      }
+      #gallery .container .photo-gallery .four {
+            order: 3;
+      }
+      #gallery .container .photo-gallery .two {
+            order: 5;
+      }
+      #gallery .container .photo-gallery .three {
+            order: 2;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+
+      /* - start media contact - */
+      #contact .container{
+            width: 85%;
+      }
+      #contact .container .contact-details .info{
+            width:100%; 
+      }
+      #contact .container form .input-group{
+            flex-direction: column;
+      }
+      #contact .container form .input-group input{
+            width:100%; 
+      }
+      /* -- end media contact -- */
+      /* ----------------------- */
+
+      /* - start media footer -- */
+       #footer .container{
+            width: 85%;
+            justify-content: space-between;
+            padding-top: 0;
+            flex-flow: wrap;
+            padding-top: 20px;
+      }
+      #footer .container .about{
+            width: 45%;
+            order: 1;
+      }
+      #footer .container .subscription{
+            width:100%;  
+            order: 3;
+      }
+      #footer .container .contact-details{
+            width: 45%; 
+            order: 2;
+      }
+      #footer .container .subscription .box .group input{
+            width: 75%;
+      }
+      #footer .container .subscription .box .group button{
+            width: 22%;
+            margin-top: 10px;
+            padding: 12px 10px;
+      }
+      #footer .container .contact-details{
+            padding-left: 0px;   
+      }
+      #footer .container .contact-details ul li{
+            padding-left: 10px;   
+      }
+      /* -- end media footer --- */
+      /* ----------------------- */
+}
+
+
+/*---- large --- */
+@media all and (min-width:993px)  and (max-width:1299px) {
+      /* -- start media home -- */
+      #home .container{
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+      }
+      #home .container .header-content{
+            padding-top: 20px;
+      }
+      #home .container picture{
+            width: 55%;
+            margin: auto;
+      }
+      /* ---- end media home --- */
+      /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery .container .photo-gallery{
+            height: 1100px;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+
+      /* -- start media chefs -- */
+      #chefs .container{
+            width: 98%;
+      }
+      /* --- end media chefs --- */
+      /* ----------------------- */
+
+      /* - start media contact - */
+      #contact .container{
+            width: 95%;
+      }
+      /* -- end media contact -- */
+      /* ----------------------- */
+}
+
+
+/*--- X large --- */
+@media screen and (min-width:1300px) and (max-width:1400px)  {
+      /* -- start media home -- */
+      #home .container{
+            width: 85%;
+      }
+      /* ---- end media home --- */
+      /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery .container .photo-gallery{
+            height: 1000px;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+      
+}
+
+/*--- xX large --- */
+@media screen and (min-width:1500px){
+
+      /* -- start media home -- */
+      #home .container{
+            width: 80%;
+      }
+      /* ---- end media home --- */
+      /* ----------------------- */
+
+      /* - start media gallery - */
+      #gallery .container .photo-gallery{
+            height: 1300px;
+      }
+      /* -- end media gallery -- */
+      /* ----------------------- */
+}
